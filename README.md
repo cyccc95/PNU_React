@@ -4,6 +4,6 @@
 ### 22.10.05
 + React start
 + Components
-+ SetInterval()
++ SetInterval() + render
 + new Date()
 + Gh-pages
