@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Do Hyeon', sans-serif;
+  
+}
+li {
+  list-style: none;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #E38B29;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.nav-logo {
+  font-size: 40px;
+}
+.nav-menu {
+  font-size: 30px;
+  display: flex;  
+}
+.nav-menu li {
+  margin: 0 20px;
+}
+.nav-menu li:hover {
+  color: red;
+}
+.nav-icon {
+ font-size: 30px; 
+}
+
+/* header */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  background-color: #F1A661;
+}
+.header-title {
+  width: 40%;
+  color: white;
+  font-size: 40px;
+}
+.header-content {
+  width: 60%;
+  font-size: 20px;
+}
+
+/* main */
+main {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  background-color: #FFD8A9;
+}
+.main-item {
+  width: 200px
+}
+.main-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.main-content {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+}
+main img {
+  border-radius: 50%;
+}
+
+
+/* footer */
+footer {
+  padding: 20px;
+  background-color: #FDEEDC;
+  display: flex;
+  align-items: center;
+}
+footer > div {
+  margin: 0 30px;
+  width: 40%;
+  text-align: center;
+  font-size: 30px;
+}
+footer > ul {
+  width: 60%;
+  font-size: 20px;
+}
+footer li {
+  margin-bottom: 3px;
+  list-style-type: disc;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  header {
+    flex-direction: column;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  .main-item {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin-bottom: 15px;
+  }
+}
