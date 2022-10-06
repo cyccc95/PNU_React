@@ -16,3 +16,6 @@
   + npm run deploy
 + Component
   
+### 22.10.06
++ project1_web react practice
++
