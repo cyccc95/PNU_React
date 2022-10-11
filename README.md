@@ -18,3 +18,8 @@
   
 ### 22.10.06
 + app02 : PNU_React_project5_web
+
+### 22.10.11
++ object
++ props
++ complete app02
