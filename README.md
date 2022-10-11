@@ -17,4 +17,4 @@
 + Component
   
 ### 22.10.06
-+ PNU_React_project5_web
++ app02 : PNU_React_project5_web
