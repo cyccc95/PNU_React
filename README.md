@@ -11,7 +11,7 @@
   + package.json
     + script 
         "predeploy": "npm run build",
-        "deploy": "gh-pages-d build"
+        "deploy": "gh-pages -d build"
     + "homepage": "github url",
   + npm run deploy
 + Component
