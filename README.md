@@ -23,3 +23,7 @@
 + object
 + props
 + complete app02
++ app03 : review
++ 삼항 연산자
++ falsy 값으로 간주
+  + false, 0, -0, "", null, undefined, NaN
