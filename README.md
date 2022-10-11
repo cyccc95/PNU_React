@@ -17,4 +17,4 @@
 + Component
   
 ### 22.10.06
-+ project1_web react practice
++ PNU_React_project5_web
