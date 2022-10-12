@@ -27,3 +27,10 @@
 + 삼항 연산자
 + falsy 값으로 간주
   + false, 0, -0, "", null, undefined, NaN
+
+### 22.10.12
++ review
++ 인라인 형식, object 변수, css 파일로 스타일 변경
++ cascading
++ object
+
