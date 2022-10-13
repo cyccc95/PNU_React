@@ -24,10 +24,8 @@ function MyCom3(props){
   
   return(
     <div className="container">
-      <div className="box">
-        <li className="mvLi">
-          {lis}
-        </li>
+      <div className="mvLi">
+        {lis}
       </div>
       <div className="like">
         <span onClick={() => {

@@ -9,15 +9,13 @@
   text-align: center;
   padding: 10px;
 }
-.box {
+.mvLi {
   margin: 5px;
   padding: 20px;
   border: 2px solid black;
   border-radius: 10px;
   width: 60vw;
   max-width: 300px;
-}
-.mvLi {
   list-style: none;
   display: flex;
 }
