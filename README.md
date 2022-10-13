@@ -34,3 +34,9 @@
 + cascading
 + object
 
+### 22.10.13
++ array with object
++ map
++ key
++ useState
+
