@@ -28,5 +28,20 @@
   text-align: left;
   padding: 5px 10px;
 }
-
+.like {
+  display: flex;
+  justify-content: center;
+}
+.like div {
+  margin: 20px;
+}
+.timer {
+  text-align: center;
+  font-size: 25px;
+}
+.timer div {
+  /* display: flex;
+  justify-content: center; */
+  margin: 10px;
+}
 
