@@ -19,6 +19,15 @@
   list-style: none;
   display: flex;
 }
+.mvLiDetail {
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 60vw;
+  max-width: 300px;
+  list-style: none;
+}
 .rank {
   border: 1px solid black;
   border-radius: 50%;
@@ -42,4 +51,7 @@
 }
 .like span {
   padding: 3px;
+}
+.searchMv {
+  text-align: center;
 }

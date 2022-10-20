@@ -1,5 +1,6 @@
 // import MyCom from './components/MyCom';
 // import MyCom2 from './components/MyCom2';
+import { useEffect, useRef, useState } from 'react';
 import MyCom3 from './components/MyCom3';
 
 function App() {
@@ -205,14 +206,47 @@ function App() {
       "showCnt": "61"
     }
   ];
-  let mvs = mv.map((m) => 
-    <MyCom3 key={m.movieCd} item={m} />
-  )
+  // let mvs = mv.map((m) => 
+  //   <MyCom3 key={m.movieCd} item={m} />
+  // )
+  let [mvs, setMvs] = useState([]);
+
+
+  // ref 변수 선언
+  const txtRef = useRef();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    
+    // let temp = [];
+    // for(let i = 0; i < mv.length; i++){
+    //   if(mv[i].movieNm.includes(txtRef.current.value)){
+    //     temp.push(<MyCom3 key={mv[i].movieCd} item={mv[i]} />)
+    //   }
+    // }
+    // setMvs(temp);
+    
+    let temp = mv.filter((m) => m.movieNm.includes(txtRef.current.value))
+    setMvs(temp.map((m) => <MyCom3 key={m.movieCd} item={m} />))
+  }
+
+  // useEffect
+  useEffect(() => {
+    txtRef.current.focus() // 랜더링 처음 됐을때 (새로고침) 커서가 input에 가게 해줌
+    setMvs(mv.map((m) => <MyCom3 key={m.movieCd} item={m} />))
+  }, []);
+  
+  
   return (
     <>
       {/* <MyCom /> */}
       {/* <MyCom2 /> */}
       <h1 className="boxTitle">박스오피스</h1>
+      <form className='searchMv' onSubmit={handleClick}>
+        <input name="txt1" type="text" ref={txtRef} placeholder="영화명을 입력하세요"></input>
+        <button type='submit'>확인</button>
+        <button type='reset'>취소</button>
+      </form>
       {/* <MyCom3 item={mv} /> */}
       {mvs}
     </>

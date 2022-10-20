@@ -20,20 +20,42 @@ function MyCom3(props){
         <div key={k + myMv['movieCd']} className={k}>{myMv[k]}</div>
   )  
 
+  const keys2 = ['openDt','salesAcc','audiAcc']
+  let lisDetail = keys2.map((k) =>
+    <div key={k + myMv['movieCd']} className={k}>{k} : {myMv[k]}</div>
+  )
+
   let [count, upCount] = useState(0);
   
-  return(
-    <div className="container">
-      <div className="mvLi">
-        {lis}
+  let [view, setView] = useState('none');
+
+  let viewBlock = (e) => {
+    e.preventDefault();
+    setView(view = 'block')
+  }
+  let viewNone = (e) => {
+    e.preventDefault();
+    setView(view = 'none')
+  }
+
+  return(  
+      <div className="container">
+        <div>
+          <div className="mvLi" onMouseEnter={viewBlock} onMouseLeave={viewNone}>
+            {lis}
+          </div>
+          <div className="mvLiDetail" style={{'display' : view}}>
+            {lisDetail}
+          </div>
+        </div>
+        <div className="like">
+          <span onClick={() => {
+            upCount(count+1)
+            }}>❤</span>
+          <span>{count}</span>
+        </div>
       </div>
-      <div className="like">
-        <span onClick={() => {
-          upCount(count+1)
-          }}>❤</span>
-        <span>{count}</span>
-      </div>
-    </div>
+    
   );
 }
 
