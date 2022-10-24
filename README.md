@@ -52,3 +52,9 @@
 ### 22.10.20
 + PNU_React_project6
 
+### 22.10.24
++ npm install react-router-dom
++ BrowserRouter Routes Route
++ Link
+
+
