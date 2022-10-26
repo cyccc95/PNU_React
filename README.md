@@ -60,5 +60,8 @@
 ### 22.10.25
 + complete PNU_React_project6_weather
 
+### 22.10.26
++ PNU_React_project7 start
+
 
 
