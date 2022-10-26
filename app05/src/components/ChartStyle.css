@@ -1,0 +1,58 @@
+.boxTitle {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 30px;
+  margin: 0 auto;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  width: 50%;
+  background-color: gray;
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 20px;
+}
+.mvItem {
+  display: flex;
+}
+.mvItemRank  {
+  width: 30%;
+}
+.mvItemName {
+  width: 70%;
+}
+
+.selectDate {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.mvDetail {
+  width: 50%;
+}
+.mvDetailItem {
+  display: flex;
+  background-color: bisque;
+  color: coral;
+  padding: 10px;
+}
+.mvDetailItem div {
+  width: 50%;
+  text-align: center;
+}
+
+.homeButton {
+  background-color: gray;
+  color: white;
+  border: none;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
