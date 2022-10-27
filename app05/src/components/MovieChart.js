@@ -17,7 +17,7 @@ function MovieChart(){
         mv = data.boxOfficeResult.dailyBoxOfficeList;
         console.log(data)
         setMv(mv.map((m) => 
-          <Link to={'/MovieDetail/' + m.movieCd}><MvItem key={m.movieCd} item={m} /></Link>))
+          <MvItem key={m.movieCd} item={m} />))
       })
       .catch((err) => {console.log(err)})
   }  

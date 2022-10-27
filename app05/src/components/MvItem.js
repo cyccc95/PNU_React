@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import ChartStyle from './ChartStyle.css';
-import {useParams} from 'react-router-dom';
+import {useParams, Link} from 'react-router-dom';
 
 
 
 function MvItem(props){
   const mvItem = {...props.item}
-
+  console.log(mvItem)
   let [view, setView] = useState('none');
 
   let viewBlock = (e) => {
@@ -21,11 +21,13 @@ function MvItem(props){
  
   return(
     <>
-      <div className="mvItem" onMouseEnter={viewBlock} onMouseLeave={viewNone}>
-        <div className='mvItemRank'>{mvItem.rank}</div>
-        <div className='mvItemName'>{mvItem.movieNm}</div>
-      </div>
-      
+      {/* <Link to={'/MovieDetail/' + mvItem.movieCd}> */}
+        <div className="mvItem" onMouseEnter={viewBlock} onMouseLeave={viewNone}>
+          <div className='mvItemRank'>{mvItem.rank}</div>
+          <div className='mvItemName'>{mvItem.movieNm}</div>
+        </div>
+      {/* </Link> */}
+     
       <div className='mvDetail'style={{'display' : view}}>
         <div className='mvDetailItem'>
           <div>개봉일</div> 
@@ -33,11 +35,11 @@ function MvItem(props){
         </div>
         <div className='mvDetailItem'>
           <div>누적관객수</div>
-          <div>{mvItem.audiAcc}원</div>
+          <div>{mvItem.audiAcc}명</div>
         </div>
         <div className='mvDetailItem'>
           <div>누적매출액</div>
-          <div>{mvItem.salesAcc}명</div>
+          <div>{mvItem.salesAcc}원</div>
         </div>
       </div>
     </>

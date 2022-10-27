@@ -3,9 +3,10 @@ import {useState} from 'react';
 
 
 
-function MovieDetail(){
+function MovieDetail(props){
   const movieCd = useParams().mvCd;
   console.log(movieCd)
+  console.log(props.rank)
 
   
 

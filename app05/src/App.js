@@ -11,7 +11,7 @@ function App() {
       <h1 className="boxTitle">박스오피스</h1>
       <Routes>
         <Route path="/" element={<MovieChart />} />
-        <Route path="/MovieDetail/:mvCd" element={<MovieDetail />} />
+        {/* <Route path="/MovieDetail/:mvCd" element={<MovieDetail />} /> */}
       </Routes>
     </>
   )
