@@ -66,5 +66,26 @@
 ### 22.10.28
 + complete PNU_React_project7_movie
 
+### 22.10.31
++ Firebase
+  + Firebase Cloud Function
+    + 클라우드 서비스를 빌드하고 연결할 수 있는 serverless 실행 환경
+  + Auth
+    + 주요 SNS를 통해서 로그인을 쉽게 구현하는 서비스
+  + Hosting
+    + 서버 없이 웹 서비스를 배포할 수 있도록 도와주는 서비스
+  + Realtime Databese:
+    + Firebase의 기존 실시간 데이터베이스
+  + Cloud Firestore
+    + 모바일 앱 개발을 위한 Firebase의 최신 데이터베이스ML
+    + 머신 러닝 서비스
++ Firebase Hosting
+  + firebase 프로젝트 생성
+  + npm install -g firebase-tools
+  + firebase
+  + npm run build
+  + firebase login
+  + firebase init
+  + firebase deploy
 
 
