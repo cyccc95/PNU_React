@@ -63,5 +63,8 @@
 ### 22.10.26
 + PNU_React_project7 start
 
+### 22.10.28
++ complete PNU_React_project7_movie
+
 
 
